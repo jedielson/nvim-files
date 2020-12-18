@@ -1,11 +1,24 @@
 "set $HOME = "~/AppData/Local"
+"
+let path = "~/AppData/Local"
 
-source ~/AppData/Local/nvim/plugins/plugins.vim
-source ~/AppData/Local/nvim/general/settings.vim
-source ~/AppData/Local/nvim/themes/onedark.vim 
-source ~/AppData/Local/nvim/plugins/coc.vim
-source ~/AppData/Local/nvim/keys/mappings.vim
-source ~/AppData/Local/nvim/themes/airline.vim
-source ~/AppData/Local/nvim/plug-config/start-screen.vim
-source ~/AppData/Local/nvim/plug-config/signify.vim
+if has('unix')
+  let path = "~/.config"
+endif
+
+
+let paths = [
+      \'/nvim/plugins/plugins.vim',
+      \'/nvim/general/settings.vim',
+      \'/nvim/themes/onedark.vim', 
+      \'/nvim/plugins/coc.vim',
+      \'/nvim/keys/mappings.vim',
+      \'/nvim/themes/airline.vim',
+      \'/nvim/plug-config/start-screen.vim',
+      \'/nvim/plug-config/signify.vim'
+      \]
+
+for s in paths	
+  execute 'source'.fnameescape(path.s)
+endfor
 

@@ -1,4 +1,11 @@
-call plug#begin('~/AppData/Local/nvim/autoload/plugged')
+
+let path = "~/AppData/Local"
+
+if has('unix')
+  let path = "~/.config"
+endif
+
+call plug#begin(path.'/nvim/autoload/plugged')
 " File Explorer
 " Plug 'preservim/nerdtree'
 

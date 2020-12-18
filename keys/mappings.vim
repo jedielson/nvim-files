@@ -2,6 +2,16 @@
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
+" Navigation INSERT MODE
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
+
+inoremap <C-b> <esc>bi
+inoremap <C-w> <esc>wi
+inoremap <C-e> <esc>ei
+
 " Use alt + hjkl to resize windows
 nnoremap <M-j>    :resize -2<CR>
 nnoremap <M-k>    :resize +2<CR>
@@ -9,9 +19,7 @@ nnoremap <M-h>    :vertical resize -2<CR>
 nnoremap <M-l>    :vertical resize +2<CR>
 
 " I hate escape more than anything else
-inoremap jk <Esc>
-inoremap kj <Esc>
-inoremap ee <Esc>
+inoremap qq <Esc>
 
 " Easy CAPS
 inoremap <c-u> <ESC>viwUi

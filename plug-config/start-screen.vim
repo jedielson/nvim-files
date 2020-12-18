@@ -7,7 +7,27 @@ let g:startify_lists = [
       \ { 'type': 'dir',       'header': ['   Current Directory '. getcwd()] },
       \ ]
 
+
+
+if has('unix')
+
+  let g:startify_bookmarks = [
+              \ { 'c': '~/.config/nvim/init.vim' },
+              \ { 'e': '~/exercism' }
+              \ ]
+
+else
+  
+  let g:startify_bookmarks = [
+              \ { 'n': 'D:/SourceCodes/worknotes/notas.txt'},
+              \ { 'c': '~/AppData/Local/nvim/init.vim' },
+              \ 'D:/SourceCodes/estudos'
+              \ ]
+
+endif
+
 let g:startify_bookmarks = [
+            \ { 'n': 'D:/SourceCodes/worknotes/notas.txt'},
             \ { 'c': '~/AppData/Local/nvim/init.vim' },
             \ 'D:/SourceCodes/estudos'
             \ ]

@@ -26,12 +26,6 @@ else
 
 endif
 
-let g:startify_bookmarks = [
-            \ { 'n': 'D:/SourceCodes/worknotes/notas.txt'},
-            \ { 'c': '~/AppData/Local/nvim/init.vim' },
-            \ 'D:/SourceCodes/estudos'
-            \ ]
-
 let g:startify_session_persistence = 1
 let g:startify_enable_special = 0
 

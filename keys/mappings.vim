@@ -2,11 +2,17 @@
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
+" Better Navigation
+nnoremap qq i
+nnoremap j h
+nnoremap k j
+nnoremap i k
+
 " Navigation INSERT MODE
-inoremap <C-h> <Left>
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
-inoremap <C-l> <Right>
+inoremap <M-j> <Left>
+inoremap <M-k> <Down>
+inoremap <M-i> <Up>
+inoremap <M-l> <Right>
 
 inoremap <C-b> <esc>bi
 inoremap <C-w> <esc>wi

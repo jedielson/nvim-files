@@ -15,7 +15,9 @@ let paths = [
       \'/nvim/keys/mappings.vim',
       \'/nvim/themes/airline.vim',
       \'/nvim/plug-config/start-screen.vim',
-      \'/nvim/plug-config/signify.vim'
+      \'/nvim/plug-config/signify.vim',
+      \'/nvim/plug-config/which-key.vim',
+      \'/nvim/plug-config/floaterm.vim',
       \]
 
 for s in paths	

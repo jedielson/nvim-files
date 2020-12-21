@@ -25,4 +25,13 @@ Plug 'mhinz/vim-startify'
 
 " Git Integration
 Plug 'mhinz/vim-signify'
+
+" Maps key to fast actions
+Plug 'liuchengxu/vim-which-key'
+
+" Commentary
+Plug 'tpope/vim-commentary'
+
+" Better terminal integration
+Plug 'voldikss/vim-floaterm'
 call plug#end()

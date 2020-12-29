@@ -9,20 +9,21 @@ nnoremap k j
 nnoremap i k
 
 " Navigation INSERT MODE
-inoremap <M-j> <Left>
-inoremap <M-k> <Down>
-inoremap <M-i> <Up>
-inoremap <M-l> <Right>
+inoremap <A-j> <Left>
+inoremap <A-k> <Down>
+inoremap <A-i> <Up>
+inoremap <A-l> <Right>
 
-inoremap <C-b> <esc>bi
-inoremap <C-w> <esc>wi
-inoremap <C-e> <esc>ei
+
+inoremap <A-h> <C-o>b
+inoremap <A-o> <C-o>w
+inoremap <A-ç> <C-o>e<C-o>l
 
 " Use alt + hjkl to resize windows
-nnoremap <M-j>    :resize -2<CR>
-nnoremap <M-k>    :resize +2<CR>
-nnoremap <M-h>    :vertical resize -2<CR>
-nnoremap <M-l>    :vertical resize +2<CR>
+nnoremap <A-j>    :resize -2<CR>
+nnoremap <A-k>    :resize +2<CR>
+nnoremap <A-h>    :vertical resize -2<CR>
+nnoremap <A-l>    :vertical resize +2<CR>
 
 " I hate escape more than anything else
 inoremap qq <Esc>

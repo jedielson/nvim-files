@@ -34,4 +34,9 @@ Plug 'tpope/vim-commentary'
 
 " Better terminal integration
 Plug 'voldikss/vim-floaterm'
+
+" Autopairs
+Plug 'jiangmiao/auto-pairs'
+
+
 call plug#end()

@@ -7,11 +7,15 @@ endif
 
 call plug#begin(path.'/nvim/autoload/plugged')
 " File Explorer
-" Plug 'preservim/nerdtree'
+"Plug 'preservim/nerdtree'
+
+" Omnisharp
+Plug 'OmniSharp/omnisharp-vim'
+
 
 " Themes
 Plug 'joshdick/onedark.vim'
-Plug 'iCyMind/NeoSolarized'
+"Plug 'iCyMind/NeoSolarized'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -51,3 +55,4 @@ Plug 'airblade/vim-rooter'
 
 Plug 'dense-analysis/ale'
 call plug#end()
+

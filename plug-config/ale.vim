@@ -1,3 +1,4 @@
+"nnoremap <ESC> :echo "HELLO"<CR>
 
 " ALE
 let g:ale_sign_column_always = 1

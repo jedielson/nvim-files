@@ -38,5 +38,8 @@ Plug 'voldikss/vim-floaterm'
 " Autopairs
 Plug 'jiangmiao/auto-pairs'
 
+" EditConfig
+Plug 'editorconfig/editorconfig-vim'
+
 
 call plug#end()

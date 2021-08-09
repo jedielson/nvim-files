@@ -41,5 +41,13 @@ Plug 'jiangmiao/auto-pairs'
 " EditConfig
 Plug 'editorconfig/editorconfig-vim'
 
+" Snippets
+Plug 'honza/vim-snippets'
 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
+
+
+Plug 'dense-analysis/ale'
 call plug#end()

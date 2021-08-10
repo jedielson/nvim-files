@@ -19,6 +19,7 @@ let paths = [
       \'/nvim/plug-config/which-key.vim',
       \'/nvim/plug-config/floaterm.vim',
       \'/nvim/plug-config/ale.vim',
+      \'/nvim/plug-config/fzf.vim'
       \]
 
 for s in paths	

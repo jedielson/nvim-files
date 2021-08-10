@@ -8,6 +8,10 @@ endif
 call plug#begin(path.'/nvim/autoload/plugged')
 " File Explorer
 "Plug 'preservim/nerdtree'
+Plug 'dstein64/vim-startuptime'
+
+"
+Plug 'neovim/nvim-lspconfig'
 
 " Omnisharp
 Plug 'OmniSharp/omnisharp-vim'

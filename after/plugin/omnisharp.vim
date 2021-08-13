@@ -7,10 +7,10 @@ lua << EOF
 
  local omnisharp_root = ""
  if vim.fn.has('unix') == 1 then
-      omnisharp_root = "C:\\ProgramData\\chocolatey\\bin\\OmniSharp.exe"
+     omnisharp_root = "/usr/src/omnisharp/OmniSharp.exe"
  else
-      omnisharp_root = "/usr/src/omnisharp/OmniSharp.exe"
- end
+      omnisharp_root = "C:\\ProgramData\\chocolatey\\bin\\OmniSharp.exe"
+  end
 
  local pid = vim.fn.getpid()
  local omnisharp_bin = nvim_lsp.omnisharp.setup({ cmd = { omnisharp_root, "--languageserver" , "--hostPID", tostring(pid) } })

@@ -5,8 +5,14 @@ lua << EOF
     require('completion').on_attach(client)
  end
 
- local omnisharp_bin = "C:\\ProgramData\\chocolatey\\bin\\OmniSharp.exe"
+ local omnisharp_root = ""
+ if vim.fn.has('unix') == 1 then
+      omnisharp_root = "C:\\ProgramData\\chocolatey\\bin\\OmniSharp.exe"
+ else
+      omnisharp_root = "/usr/src/omnisharp/OmniSharp.exe"
+ end
+
  local pid = vim.fn.getpid()
- local omnisharp_bin =  nvim_lsp.omnisharp.setup({ cmd = { omnisharp_bin, "--languageserver" , "--hostPID", tostring(pid) } })
+ local omnisharp_bin = nvim_lsp.omnisharp.setup({ cmd = { omnisharp_root, "--languageserver" , "--hostPID", tostring(pid) } })
 
 EOF

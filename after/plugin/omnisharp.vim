@@ -7,8 +7,10 @@ lua << EOF
 
  local omnisharp_root = ""
  if vim.fn.has('unix') == 1 then
-     omnisharp_root = "/usr/src/omnisharp/OmniSharp.exe"
+     print('Hello from linux\n')
+     omnisharp_root = "/home/jedi/.cache/omnisharp-vim/omnisharp-roslyn/run"
  else
+      print('Hello from Windows\n')
       omnisharp_root = "C:\\ProgramData\\chocolatey\\bin\\OmniSharp.exe"
   end
 

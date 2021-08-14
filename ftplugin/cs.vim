@@ -13,8 +13,8 @@ let g:OmniSharp_diagnostic_exclude_paths = [ 'Temp[/\\]', 'obj[/\\]', '\.nuget[/
 let g:OmniSharp_fzf_options = { 'down': '10' }
 
 nmap gd <Plug>(omnisharp_go_to_definition)
-nmap <Leader><Space> <Plug>(omnisharp_code_actions)
-xmap <Leader><Space> <Plug>(omnisharp_code_actions)
+nmap <M-Enter> <Plug>(omnisharp_code_actions)
+xmap <M-Enter> <Plug>(omnisharp_code_actions)
 nmap <F2> <Plug>(omnisharp_rename)
 nmap <C-k><C-c> <Plug>(omnisharp_code_format)
 nmap <Leader>fi <Plug>(omnisharp_find_implementations)
